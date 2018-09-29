@@ -121,3 +121,6 @@ Uninstalling hello-typed2-0.0.1:
 
 ## License
 This repository is licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/deed). See [LICENSE](LICENSE) also.
+
+## Links
+- [PEP 561 -- Distributing and Packaging Type Information](https://www.python.org/dev/peps/pep-0561/)
