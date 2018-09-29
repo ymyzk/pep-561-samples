@@ -4,24 +4,29 @@ This repository contains sample packages for demonstrating usage of PEP 561.
 ## Contents
 - `hello`: Untyped (normal) package.
   ```python
+  # hello/__init__.py
   def say_hello(name):
       print(f"Hello, {name}")
   ```
 - `hello-stubs`: Stub-only package for `hello`
   ```python
+  # hello-stubs/__init__.pyi
   def say_hello(name: str) -> None: ...
   ```
 - `hello-typed1`: Typed version of `hello` package. Type hints are written using annotations.
   ```python
+  # hello/__init__.py
   def say_hello(name: str) -> None:
-      print(f"Hello, {name}")a
+      print(f"Hello, {name}")
   ```
 - `hello-typed2`: Typed version of `hello` package. Type hints are written as stub files.
   ```python
+  # hello/__init__.py
   def say_hello(name):
       print(f"Hello, {name}")
   ```
   ```python
+  # hello/__init__.pyi
   def say_hello(name: str) -> None: ...
   ```
 - `sample.py`: A very simple program which uses `hello` package.
